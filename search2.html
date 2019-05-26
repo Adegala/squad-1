@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+
+    h1 {
+        float: right;
+        padding: 20px;
+        margin: 10px;
+
+    }
+
+    h2 {
+        color: black;
+        background-color: whitesmoke;
+        font-family: 'Calibri''Times New Roman'Serif;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-radius: 8px;
+    }
+
+
+    body {
+        background-color: lightgray;
+    }
+
+  
+    aside {
+        float: left;
+        padding: 20px;
+        width: 20%;
+        position: fixed;
+        margin-left: 20px;
+        height: 100%;
+        margin: 25px;
+        background: lightgrey;
+        border-radius: 8px;
+        text-decoration: none;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Calibri''Times New Roman'Serif;
+        border-radius: 8px;
+        padding: auto;
+        margin: auto;
+        background: lightgray;
+    }
+
+    .page {
+        float: right;
+        width: 70%;
+        padding: 20px;
+        color: grey;
+        background: lightgrey;
+        font-family: 'Calibri''Times New Roman'Serif;
+        height: 100%;
+        margin: 25px;
+        border-radius: 8px;
+    }
+
+   
+
+    input[type=text] {
+
+        width: 80%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        float: center;
+
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+
+
+
+    .button {
+        background-color: red;
+        border: none;
+        color: whitesmoke;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        float: center;
+    }
+
+   
+</style>
+
+<head>
+    <title>CSIRO Annotation</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: whitesmoke">
+
+    <header>
+        <img src="csiro.jpg" class="img-responsive" alt="logo" width="100px" height="100px">
+ 
+    </header>
+   
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="csiro.html">CSIRO</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Dictionary.html">Dictionary</a></li>
+                        <li><a href="Thesaurus.html">Thesaurus</a></li>
+                        <li><a href="Annotator.html">Annontator</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Sup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="Lin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+
+    <main>
+        <aside>
+            <div>
+                <h2>Help</h2>
+                <br>
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="aontact.html">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="page">
+            <div class="search">
+                <h2>Quick Search</h2>
+                <br>
+                <br>
+                <div>
+                    <input type="text" id="searchbar" name="searchbar" placeholder="Search Here...">
+                    <br>
+                    <button type="submit" class="btn btn-info" role="button">Search</button>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <h2> Databases </h2>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">Databases</div>
+                <div class="panel-body"><a href="csiro.html">CSIRO Link Data Registry</a></div>
+                <div class="panel-body"><a href="ausgin.html">AusGIN GeoScience Vocabularies</a></div>
+                <div class="panel-body"><a href="nerc.html">NERC Vocabulary Service</a></td></div>
+                <div class="panel-body"><a href="bio.html">BioPortal</a></div>
+                <div class="panel-body"><a href="library.html">Library of Congress Subject Headings</a></div>
+                <div class="panel-body"><a href="dbpedia.html">DBpedia</a></div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

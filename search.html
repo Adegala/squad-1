@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+
+<html>
+<style>
+    h1 {
+        font-family: 'Calibri';
+        font-style: bold;
+        color: #C0C0C0;
+        font-size: 400%;
+        text-align: center;
+    }
+
+    h2 {
+        color: gainsboro;
+        background-color: lightgray;
+        font-family: 'Calibri';
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-radius: 8px;
+    }
+
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    .button1:hover {
+        background-color: lightgray;
+        color: cornflowerblue;
+        border-radius: 8px;
+        border: solid 2px;
+        border-color: cornflowerblue;
+    }
+
+    .button {
+        background-color: cornflowerblue;
+        color: white;
+        border-radius: 8px;
+        border: solid 2px;
+        border-color: cornflowerblue;
+        width: 50%;
+        float: center;
+    }
+
+    #rightcol {
+
+        margin-top: 0;
+        padding: 10px;
+        width: 70;
+        float: right;
+        column-span: 7;
+        padding: 5px;
+        margin-right: 40px;
+        margin-left: 325px;
+    }
+
+    #leftcol {
+        margin-left: 40px;
+        width: 20%;
+        float: left;
+        height: 100%;
+        position: fixed;
+        column-span: 3;
+        padding: 10px;
+        background-color: lightgrey;
+        border-radius: 8px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        float: bottom;
+        text-align: bottom, left;
+    }
+
+    p {
+        text-align: center;
+        font-family: Arial;
+
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200;
+        width: 100;
+
+    }
+
+    input[type=text] {
+
+        width: 80%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        float: center;
+
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+
+    }
+</style>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+
+	  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"/>
+    <!--link rel="stylesheet" href="/css/jquery-ui.css"/-->
+	<!--link rel="stylesheet" href="/css/style.css"/-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="/Search/js/dictionary.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.lastModified;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</head>
+
+<body style="background-color:white">
+
+    <header>
+        <h1>Text Annotation Tool</h1>
+    </header>
+    <br>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="Search.html">Search
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Date.html">By Date</a></li>
+                            <li><a href="Category.html">By Category</a></li>
+                            <li><a href="AtoZ.html">A to Z</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Dictionary.html">Dictionary</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="Thesaurus.html">Thesaurus
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AtoZ.html">A to Z</a></li>
+                            <li><a href="Search.html">Search Dictionary</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Annotator.html">Annontator</a></li>
+                </ul>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Sup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="Lin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="input-group">
+				<form action="result.php" method="GET">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+						<input class="btn btn-default" type="submit" value="Search" />
+                        <!--<button class="btn btn-default" type="submit"> &nbsp;
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>-->
+                    </div>
+				</form>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div class="w3-container w3-margin">
+            <div id="leftcol">
+                <h3>Quick Search</h3>
+                <br>
+                <ul>
+                    <li> Some information </li>
+                    <li> Some mmore information </li>
+                    <li> More information </li>
+                    <li> Alternate information </li>
+                    <li> Extra information </li>
+                    <li> Details </li>
+                </ul>
+                &nbsp; Search here.
+                <br>
+                <br>
+                &nbsp; <button type="button" class="btn btn-info" role="button">Search</button>
+
+
+            </div>
+        </div>
+        <div class="w3-container w3-margin">
+            <div id="rightcol">
+                <main>
+                    <h2 style="color: black">Search</h2>
+                    <br>
+                    <br>
+
+                    <p><i>Please begin searching terms below</i></p>
+
+                    <br>
+                    <br>
+                    <div>
+					<div class="col col-md-6">
+						<div class="input-group">
+							<input class="form-control" id="searchID1"  align="center" type="text" placeholder="Search from the API" aria-label="Search">
+							<div class="input-group-btn">
+							  <button class="btn btn-primary" type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							  </button>
+							</div>
+						</div>
+						<span id="defID1" align="center">Enter your search terms into the search box, e.g. Water oxygen</span>
+						</div>
+                    </div>
+                    <hr>
+                    <br>
+                    <h2 style="color: black"> Databases </h2>
+                    <br>
+                    <br>
+                    <p> Please select from one of the databases below</p>
+                    <br>
+                    <br>
+                    <div>
+                                <a href="research.html"><img src="background.jpg" class="img-rounded">Reserch
+                                    Vocabularies Australia</a>
+                                <div class="centered">Centered</div>
+                                <a href="csiro.html">CSIRO Link Data Registry</a>
+                                <a href="ausgin.html">AusGIN GeoScience Vocabularies</a>
+                                <a href="nerc.html">NERC Vocabulary Service</a>
+                                <a href="bio.html">BioPortal</a>
+                                <a href="library.html">Library of Congress Subject Headings</a>
+                                <a href="dbpedia.html">DBpedia</a>
+                            
+                    </div>
+
+                            <body>
+
+                            </body>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            <footer>
+                
+                                <br>
+                                <small><i> Copyright &copy; CSIRO pty ltd.</i></small>
+                                <br>
+                                <p>Click the button for last update</p><button onclick="myFunction()">Update</button>
+                                &nbsp;<p id="demo"></p>
+                            </footer>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+$(function () {
+
+    $("#searchID1").autocomplete({
+
+        source: function( request, response ) {
+          $.ajax({
+			type:"GET",
+              url: "http://annotatingtext.appspot.com/api/adaptor/dictionary5",
+              dataType: "json",
+              data: {
+                 //featureClass: "P",
+                 //style: "full",
+                // maxRows: 12,
+                 term: request.term.toLowerCase()
+              },
+			 
+              success: function( data ) {
+			  //alert(data);
+			  //response(data);
+                  <!-- response( $.map( data.results, function( item ) { -->
+                       <!-- return { -->
+                          <!-- label: item, -->
+                          <!-- value: item -->
+                       <!-- } -->
+                  <!-- }));  -->
+				  
+				  $("#defID1").html('');
+				  if(data==""){
+				  $("#defID1").html('<div class="alert alert-info fade in">'+'Try different keywords'+'</div>');
+				  }else{
+				  for (var i=0; i< data.length; i++){
+				  //alert(data[i].definition);
+				  if(data[i].label==""||data[i].label==" "||data[i].definition==""){
+				 $("#defID1").html('<div class="alert alert-info fade in">'+'Try different keywords'+'</div>');
+					}
+					else if(data[i].link==""){
+					
+					 $("#defID1").html('<div class="text-justify" >'+'<p class=text-primary>'+'Definition-'+(i+1)+':-'+'</p>'+data[i].definition+'<br>'+'<p class=text-primary>'+'Source-'+(i+1)+':-'+'</p>'+data[i].dictionary+'</div>');
+					 //$("#defID1").html(data);
+					}
+					else if(data[i].dictionary==""){
+					
+					 $("#defID1").html('<div class="text-justify" >'+'<p class=text-primary>'+'Definition-'+(i+1)+':-'+'</p>'+data[i].definition+'</div>');
+					 //$("#defID1").html(data);
+					}
+					else{
+					
+					 $("#defID1").append('<div class="jumbotron"><div class="text-justify" >'+'<p class=text-primary>'+'Definition-'+(i+1)+':-'+'</p>'+data[i].definition+'<br>'+'<p class=text-primary>'+'Source-'+(i+1)+':-'+'</p>'+'<a href='+data[i].link+'>'+data[i].dictionary+'</a><br></div></div>');
+					 //$("#defID1").html(data);
+					}
+					//fullList=fullList +data[i] + '<br>'
+					}
+					}
+			},
+			 error: function(xhr, status, err){
+                                console.log(status);
+                                console.log(err);
+                            }
+          });
+       }
+
+    });
+
+  });
+</script>
